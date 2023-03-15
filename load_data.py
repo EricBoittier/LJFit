@@ -12,7 +12,8 @@ cluster_kern = pd.read_csv("data/clusters_kern.csv")
 cluster_pc = pd.read_csv("data/clusters_pc.csv")
 cluster_mdcm = pd.read_csv("data/clusters_mdcm.csv")
 
-# clusters = {""}
+clusters = {"flux": cluster_flux, "kern": cluster_kern, "pc": cluster_pc, "mdcm": cluster_mdcm}
+dimer = {"flux": dimer_flux, "kern": dimer_kern, "pc": dimer_pc, "mdcm": dimer_mdcm}
 
 #  distances
 l = np.load("data/dists.npz")

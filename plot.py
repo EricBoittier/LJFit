@@ -5,10 +5,10 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from opt import get_LJs, get_DEs, get_freeDEs
 from load_data import OO, OH, HH, OO_dim, OH_dim, HH_dim, dimer_flux, dimer_kern, dimer_pc
 
-#  convert molpro csv
-converters = {i: lambda x: float(x.strip().replace("D", "E")) * 627.503 * 10 ** (-3) for i in range(1, 8)}
-converters[0] = lambda x: float(x.strip().replace("D", "E"))
-df = pd.read_csv("/home/boittier/pcbach/molpro_sapt/sapt.csv", converters=converters)
+# #  convert molpro csv
+# converters = {i: lambda x: float(x.strip().replace("D", "E")) * 627.503 * 10 ** (-3) for i in range(1, 8)}
+# converters[0] = lambda x: float(x.strip().replace("D", "E"))
+# df = pd.read_csv("/home/boittier/pcbach/molpro_sapt/sapt.csv", converters=converters)
 
 
 
